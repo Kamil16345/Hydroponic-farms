@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProductServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ProductServiceApplication.class, args);
-		MongoClient mongoClient = MongoClients.create("mongodb://root:passowrd@localhost:27017");
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ProductServiceApplication.class, args);
+        MongoClient mongoClient = MongoClients.create("mongodb://root:passowrd@localhost:27017");
+    }
 
 }

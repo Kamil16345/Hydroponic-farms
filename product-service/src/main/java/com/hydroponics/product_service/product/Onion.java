@@ -11,7 +11,6 @@ import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Document(collection = "onions")
 public class Onion {
     @Id
