@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/carrot")
+@RequestMapping("/api/v1/carrots")
 public class CarrotController {
     @Autowired
     private CarrotRepository carrotRepository;
@@ -21,6 +21,7 @@ public class CarrotController {
     public Optional<Carrot> getCarrot(@PathVariable UUID id) {
         return carrotRepository.findById(id);
     }
+
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Carrot> getAllCarrots() {
