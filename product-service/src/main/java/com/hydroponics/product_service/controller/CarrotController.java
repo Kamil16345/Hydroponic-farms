@@ -18,7 +18,7 @@ public class CarrotController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Optional<Carrot> getCarrot(@PathVariable UUID id) {
+    public Optional<Carrot> getCarrot(@PathVariable String id) {
         return carrotRepository.findById(id);
     }
 
